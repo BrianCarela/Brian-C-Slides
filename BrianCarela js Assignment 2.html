@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Justin Maller</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<style type="text/css">
+		html{
+			background-color: black;
+		}
+		body{
+			font-family: 'Poppins', sans-serif;
+		}
+		#jus, body{
+			margin: 0 auto;
+			color: white;
+			width: 800px;
+			/*background-color: rgba(255,255,255,.3); just to see what i'm working with, i'll remove it later to give the page a much sleeker look*/
+		}
+		.description{
+			text-align:  justify;
+		}
+		a{
+			text-decoration: none;
+			font-weight: bold;
+			color: skyblue;
+			padding-left: 2px;
+			padding-right: 2px;
+		}
+		a:hover{
+			background-color: skyblue;
+			color: black;
+			transition: 1s;
+		}
+		.art{
+			border: solid;
+			border-color: white;
+		}
+		.butt{
+
+		}
+	</style>
+</head>
+<header>
+	<h2 id="Jus">Justin Maller</h2>
+</header>
+<body>
+	<p class="description">Justin Maller is an Australian freelance illustrator and art director based in Brooklyn, NY. He has been creating digital art for over fifteen years, and has been a full time freelance artist for the last eight.</p>
+	<p class="description">Justin has had the pleasure of producing illustrations and concept art for a diverse array of companies and publications worldwide, and enjoys a collaborative relationship with many brands, agencies and studios. He is also the Creative Director of The Depthcore Collective, an international modern art collective he established in June 2002. Justin recently completed a 365 day challenge producing a piece of art daily for his year long Facets project. Work aside, he enjoys hurting himself playing basketball, being bossed around by his Shiba Inu overlord and rambling incoherently on twitter.</p>
+
+<table>
+			<tr>
+				<td>
+	<button class="butt" id="back" onclick="plusDivs(-1)">&#10094;</button>
+				</td>
+				<td>
+<img class="art" src="overlord.jpg">
+<img class="art" src="panther.jpg">
+<img class="art" src="darkwing.jpg">
+<img class="art" src="colony.jpg">
+<img class="art" src="coldgaze.jpg">
+<img class="art" src="turbine.jpg">
+<img class="art" src="sinisterkid.jpg">
+<img class="art" src="dusk.jpg">
+<img class="art" src="simple.jpg">
+<img class="art" src="mets.jpg">
+<img class="art" src="superman.jpg">
+<img class="art" src="batman.jpg">
+				</td>
+				<td>
+	<button class="butt" id="forward" onclick="plusDivs(+1)">&#10095;</button>
+				</td>
+			</tr>
+	</table>
+	<p id="slidetext">Here we can browse some of Justin's work during his Facets project. He's done work anywhere from animals, to abstract art, to iconic logos.</p>
+</body>
+	<script type="text/javascript">
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("art");
+			if (n > x.length) {slideIndex = 1} 
+			if (n < 1) {slideIndex = x.length} 
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			} 
+			x[slideIndex - 1].style.display = "block"; 
+		}
+	</script>
+	<footer>
+	<b>CLIENT LIST</b>
+	<br><br>
+	ILLUSTRATION &amp; CAMPAIGN
+	<br><br>
+	NIKE | VERIZON | AMERICAN EXPRESS | GATORADE | DIRECTV | HP | DOLBY | LG | GRAMMYS | NBA | COCA-COLA | HARPER COLLINS | UNDER ARMOUR | JORDAN APPAREL | DC SHOE CO. | UNIVERSAL SONY PICTURES | SMIRNOFF | MARTINI | OWSLA | ESPN
+	<br><br>
+	You can buy prints of his work at <a href="http://facets.la" target="_blank">facets.la</a> and <a href="http://helmeti.ca" target="_blank">helmeti.ca</a> or apparel at <a href="http://shop.facets.la/" target="_blank">shop.facets.la.</a>
+	</footer>
+
+</html>
