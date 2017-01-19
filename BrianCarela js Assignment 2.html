@@ -10,11 +10,10 @@
 		body{
 			font-family: 'Poppins', sans-serif;
 		}
-		#jus, body{
+		#cover{
 			margin: 0 auto;
 			color: white;
 			width: 800px;
-			/*background-color: rgba(255,255,255,.3); just to see what i'm working with, i'll remove it later to give the page a much sleeker look*/
 		}
 		.description{
 			text-align:  justify;
@@ -36,23 +35,30 @@
 			border-color: white;
 		}
 		.butt{
-
+			top: 380px;
+    		left: 100px;
+    		height: 140px;
+    		font-size: 80px;
+    		color: white;
+    		background-color: black;
+		}
+		#Jus{
+			text-align: center;
 		}
 	</style>
 </head>
-<header>
-	<h2 id="Jus">Justin Maller</h2>
-</header>
+<div id="cover">
+<h2 id="Jus">Justin Maller</h2>
 <body>
 	<p class="description">Justin Maller is an Australian freelance illustrator and art director based in Brooklyn, NY. He has been creating digital art for over fifteen years, and has been a full time freelance artist for the last eight.</p>
 	<p class="description">Justin has had the pleasure of producing illustrations and concept art for a diverse array of companies and publications worldwide, and enjoys a collaborative relationship with many brands, agencies and studios. He is also the Creative Director of The Depthcore Collective, an international modern art collective he established in June 2002. Justin recently completed a 365 day challenge producing a piece of art daily for his year long Facets project. Work aside, he enjoys hurting himself playing basketball, being bossed around by his Shiba Inu overlord and rambling incoherently on twitter.</p>
 
 <table>
 			<tr>
-				<td>
+				<td colspan="2">
 	<button class="butt" id="back" onclick="plusDivs(-1)">&#10094;</button>
-				</td>
-				<td>
+				 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+				<td> 
 <img class="art" src="overlord.jpg">
 <img class="art" src="panther.jpg">
 <img class="art" src="darkwing.jpg">
@@ -66,12 +72,20 @@
 <img class="art" src="superman.jpg">
 <img class="art" src="batman.jpg">
 				</td>
-				<td>
+				<td colspan="2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 	<button class="butt" id="forward" onclick="plusDivs(+1)">&#10095;</button>
 				</td>
 			</tr>
 	</table>
 	<p id="slidetext">Here we can browse some of Justin's work during his Facets project. He's done work anywhere from animals, to abstract art, to iconic logos.</p>
+	<br><br>
+	<b>CLIENT LIST</b>
+	<br><br>
+	ILLUSTRATION &amp; CAMPAIGN
+	<br><br>
+	NIKE | VERIZON | AMERICAN EXPRESS | GATORADE | DIRECTV | HP | DOLBY | LG | GRAMMYS | NBA | COCA-COLA | HARPER COLLINS | UNDER ARMOUR | JORDAN APPAREL | DC SHOE CO. | UNIVERSAL SONY PICTURES | SMIRNOFF | MARTINI | OWSLA | ESPN
+	<br><br>
+	You can buy prints of his work at <a href="http://facets.la" target="_blank">facets.la</a> and <a href="http://helmeti.ca" target="_blank">helmeti.ca</a> or apparel at <a href="http://shop.facets.la/" target="_blank">shop.facets.la.</a>
 </body>
 	<script type="text/javascript">
 		var slideIndex = 1;
@@ -92,14 +106,5 @@
 			x[slideIndex - 1].style.display = "block"; 
 		}
 	</script>
-	<footer>
-	<b>CLIENT LIST</b>
-	<br><br>
-	ILLUSTRATION &amp; CAMPAIGN
-	<br><br>
-	NIKE | VERIZON | AMERICAN EXPRESS | GATORADE | DIRECTV | HP | DOLBY | LG | GRAMMYS | NBA | COCA-COLA | HARPER COLLINS | UNDER ARMOUR | JORDAN APPAREL | DC SHOE CO. | UNIVERSAL SONY PICTURES | SMIRNOFF | MARTINI | OWSLA | ESPN
-	<br><br>
-	You can buy prints of his work at <a href="http://facets.la" target="_blank">facets.la</a> and <a href="http://helmeti.ca" target="_blank">helmeti.ca</a> or apparel at <a href="http://shop.facets.la/" target="_blank">shop.facets.la.</a>
-	</footer>
-
+</div>
 </html>
